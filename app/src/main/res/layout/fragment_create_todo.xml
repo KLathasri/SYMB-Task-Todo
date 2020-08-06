@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@color/def_screen_bg_color"
+    tools:context=".views.CreateTodoFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:id="@+id/etTodoText"
+        android:gravity="start"
+        android:hint="@string/enter_todo_hint"
+        android:layout_above="@+id/btnSaveTodo"
+        android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveTodo"
+        android:layout_width="match_parent"
+        style="@style/TodoButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_save_todo" />
+
+</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

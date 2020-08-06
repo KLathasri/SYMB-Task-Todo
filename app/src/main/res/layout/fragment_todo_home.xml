@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.TodoHomeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_todo_list"
+            android:layout_width="match_parent"
+            style="@style/TodoButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:text="@string/btn_text_todo_list" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_create_todo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            style="@style/TodoButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:text="@string/btn_text_create_todo" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

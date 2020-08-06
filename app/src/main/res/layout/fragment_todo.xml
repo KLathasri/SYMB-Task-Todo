@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTodoText"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/todo_list_todo_text_size"
+            android:layout_height="wrap_content"
+            android:textColor="@color/todo_list_todo_text_color"
+            android:layout_margin="@dimen/text_margin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTodoTime"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/todo_list_time_text_size"
+            android:layout_height="wrap_content"
+            android:textColor="@color/todo_list_date_text_color"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_below="@id/tvTodoText"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
